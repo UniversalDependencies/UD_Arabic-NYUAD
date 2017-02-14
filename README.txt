@@ -47,8 +47,9 @@ Dep. relations: 28 of which 3 language specific
 POS tags: 16
 Category=value feature pairs: 27
 
+**ACKNOWLEDGEMENTS**
 
-
+We would like to thank the Linguistic Data Consortium's Arabic language group, and particularly Dr. Mohamed Maamouri and Drs Ann Bies and Seth Kulick, as well as the rest of the annotation team who participated in creating the Penn Arabic Treebank. We also would like to thank Reem Faraj, Ryan Roth and the annotators of the Columbia Arabic Treebank. The development of the the NYUAD-UD relied heavily on these two efforts.
 
 === Machine-readable metadata =================================================
 Documentation status: stub
