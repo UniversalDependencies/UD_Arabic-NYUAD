@@ -59,6 +59,14 @@ POS tags: 16
 Category=value feature pairs: 27
 
 
+# Changelog
+
+* 2017-11-15 v2.1
+  * No change.
+* 2017-03-01 v2.0
+  * Initial UD release.
+
+
 === Machine-readable metadata (DO NOT REMOVE!) ================================
 Data available since: UD v2.0
 License: CC BY-SA 4.0
