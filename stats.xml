@@ -10,7 +10,7 @@
   <lemmas unique="5059" /><!-- w, l, h, b, hA, hm, :, s, f, nA, None, k, TBupdate, mA, hmA -->
   <forms unique="0" /><!--  -->
   <fusions unique="0" /><!--  -->
-  <!-- Statistics of universal POS tags. The comments with the most frequent lemmas are optional (but easy to obtain). -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
   <tags unique="16">
     <tag name="ADJ">67604</tag><!-- _, TBupdate, None, ., w, ,, l, hA, b, 17 -->
     <tag name="ADP">91694</tag><!-- _, l, b, k, w, h, ", ,, hA, fy -->
@@ -29,7 +29,7 @@
     <tag name="VERB">55215</tag><!-- _, None, TBupdate, w, ,, b, ., hA, l, " -->
     <tag name="X">917</tag><!-- None, typo, TBupdate, _, ., the, w, ", EADS, b -->
   </tags>
-  <!-- Statistics of features and values. The comments with the most frequent word forms are optional (but easy to obtain). -->
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
   <feats unique="28">
     <feat name="AdpType" value="Prep" upos="ADP">91694</feat><!-- _ -->
     <feat name="Aspect" value="Imp" upos="ADP,VERB">25627</feat><!-- _ -->
