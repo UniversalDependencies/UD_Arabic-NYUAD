@@ -1,15 +1,11 @@
-Sun Feb 11 20:29:23 CET 2018
-perl -I perllib/lib/perl5 -I tools tools/evaluate_treebank.pl --verbose UD_Arabic-NYUAD
 Running the following version of tools/evaluate_treebank.pl:
-commit c1cb17aec6a5505b56b885f578dc6b1093bb4b30
+commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Feb 11 20:27:50 2018 +0100
-Switched to branch 'master'
-Your branch is up-to-date with 'origin/master'.
+Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Arabic-NYUAD:
-commit 55ebc59a521cf423cbb540dd4f471a952667a2dd
+commit f7a105cb60aea69e90c7d4c61be34d9a1e0814da
+Merge: 8dfe6ad 97c4540
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sat Nov 11 13:46:42 2017 +0100
 Size: counted 738889 of 738889 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.2102954133792.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -25,19 +21,60 @@ Universal relations: 25 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Udapi: found 84557 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 738889 words.
-Genres: found 1 out of 14 known.
+Genres: found 1 out of 17 known.
 Availability: README does not say Includes text: yes
 Availability: '_' is the most frequent form.
+validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-dev.conllu
+[Line                   4738]: Violation of guidelines: relation flat must go left-to-right
+[Line                   10386]: Violation of guidelines: relation conj must go left-to-right
+[Line                   16673]: Violation of guidelines: relation flat must go left-to-right
+[Line                   29092]: Violation of guidelines: relation flat must go left-to-right
+[Line                   40807]: Violation of guidelines: relation conj must go left-to-right
+[Line                   41468]: Violation of guidelines: relation conj must go left-to-right
+[Line                   41911]: Violation of guidelines: relation conj must go left-to-right
+[Line                   44029]: Violation of guidelines: relation conj must go left-to-right
+[Line                   44038]: Violation of guidelines: relation conj must go left-to-right
+...suppressing further errors regarding Syntax
+*** FAILED *** with 12 errors
+Syntax errors: 12
+Exit code: 1
+validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-test.conllu
+[Line                   1465]: Violation of guidelines: relation conj must go left-to-right
+[Line                   1562]: Violation of guidelines: relation flat must go left-to-right
+[Line                   1592]: Violation of guidelines: relation flat must go left-to-right
+[Line                   3173]: Violation of guidelines: relation flat must go left-to-right
+[Line                   4500]: Violation of guidelines: relation flat must go left-to-right
+[Line                   5466]: Violation of guidelines: relation flat must go left-to-right
+[Line                   6520]: Violation of guidelines: relation flat must go left-to-right
+[Line                   9975]: Violation of guidelines: relation conj must go left-to-right
+[Line                   11406]: Violation of guidelines: relation flat must go left-to-right
+...suppressing further errors regarding Syntax
+*** FAILED *** with 19 errors
+Syntax errors: 19
+Exit code: 1
+validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-train.conllu
+[Line                   503]: Violation of guidelines: relation flat must go left-to-right
+[Line                   5212]: Violation of guidelines: relation conj must go left-to-right
+[Line                   5332]: Violation of guidelines: relation conj must go left-to-right
+[Line                   5963]: Violation of guidelines: relation conj must go left-to-right
+[Line                   5993]: Violation of guidelines: relation conj must go left-to-right
+[Line                   7513]: Violation of guidelines: relation conj must go left-to-right
+[Line                   7617]: Violation of guidelines: relation conj must go left-to-right
+[Line                   15276]: Violation of guidelines: relation flat must go left-to-right
+[Line                   18007]: Violation of guidelines: relation flat must go left-to-right
+...suppressing further errors regarding Syntax
+*** FAILED *** with 85 errors
+Syntax errors: 85
+Exit code: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
-(weight=0.0769230769230769) * (score{genres}=0.0714285714285714) = 0.00549450549450549
+(weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
 (weight=0.0769230769230769) * (score{lemmas}=0.01) = 0.000769230769230769
 (weight=0.256410256410256) * (score{size}=0.956193067057072) = 0.245177709501813
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.752941176470588) = 0.0579185520361991
 (weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
 (weight=0.0769230769230769) * (score{udeprels}=0.540540540540541) = 0.0415800415800416
-(TOTAL score=0.466837475279226) * (availability=0.1) * (validity=1) = 0.0466837475279226
+(TOTAL score=0.465867856662549) * (availability=0.1) * (validity=0.01) = 0.000465867856662549
 STARS = 0
-UD_Arabic-NYUAD	0.0466837475279226	0
-Switched to branch 'dev'
-Your branch is up-to-date with 'origin/dev'.
+UD_Arabic-NYUAD	0.000465867856662549	0
