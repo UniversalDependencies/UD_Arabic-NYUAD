@@ -3,8 +3,8 @@ commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Arabic-NYUAD:
-commit f7a105cb60aea69e90c7d4c61be34d9a1e0814da
-Merge: 8dfe6ad 97c4540
+commit 5ec605876a58c6b567211513fbb3ce22bb733246
+Merge: e560ac9 3a6311f
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Size: counted 738889 of 738889 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.2102954133792.
@@ -19,54 +19,18 @@ Features: 584586 out of 738889 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
 Universal relations: 25 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
-Udapi: found 84557 bugs.
+Udapi: found 84441 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 738889 words.
 Genres: found 1 out of 17 known.
 Availability: README does not say Includes text: yes
 Availability: '_' is the most frequent form.
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-dev.conllu
-[Line                   4738]: Violation of guidelines: relation flat must go left-to-right
-[Line                   10386]: Violation of guidelines: relation conj must go left-to-right
-[Line                   16673]: Violation of guidelines: relation flat must go left-to-right
-[Line                   29092]: Violation of guidelines: relation flat must go left-to-right
-[Line                   40807]: Violation of guidelines: relation conj must go left-to-right
-[Line                   41468]: Violation of guidelines: relation conj must go left-to-right
-[Line                   41911]: Violation of guidelines: relation conj must go left-to-right
-[Line                   44029]: Violation of guidelines: relation conj must go left-to-right
-[Line                   44038]: Violation of guidelines: relation conj must go left-to-right
-...suppressing further errors regarding Syntax
-*** FAILED *** with 12 errors
-Syntax errors: 12
-Exit code: 1
+*** PASSED ***
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-test.conllu
-[Line                   1465]: Violation of guidelines: relation conj must go left-to-right
-[Line                   1562]: Violation of guidelines: relation flat must go left-to-right
-[Line                   1592]: Violation of guidelines: relation flat must go left-to-right
-[Line                   3173]: Violation of guidelines: relation flat must go left-to-right
-[Line                   4500]: Violation of guidelines: relation flat must go left-to-right
-[Line                   5466]: Violation of guidelines: relation flat must go left-to-right
-[Line                   6520]: Violation of guidelines: relation flat must go left-to-right
-[Line                   9975]: Violation of guidelines: relation conj must go left-to-right
-[Line                   11406]: Violation of guidelines: relation flat must go left-to-right
-...suppressing further errors regarding Syntax
-*** FAILED *** with 19 errors
-Syntax errors: 19
-Exit code: 1
+*** PASSED ***
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-train.conllu
-[Line                   503]: Violation of guidelines: relation flat must go left-to-right
-[Line                   5212]: Violation of guidelines: relation conj must go left-to-right
-[Line                   5332]: Violation of guidelines: relation conj must go left-to-right
-[Line                   5963]: Violation of guidelines: relation conj must go left-to-right
-[Line                   5993]: Violation of guidelines: relation conj must go left-to-right
-[Line                   7513]: Violation of guidelines: relation conj must go left-to-right
-[Line                   7617]: Violation of guidelines: relation conj must go left-to-right
-[Line                   15276]: Violation of guidelines: relation flat must go left-to-right
-[Line                   18007]: Violation of guidelines: relation flat must go left-to-right
-...suppressing further errors regarding Syntax
-*** FAILED *** with 85 errors
-Syntax errors: 85
-Exit code: 1
-Validity: 0.01
+*** PASSED ***
+Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
 (weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
 (weight=0.0769230769230769) * (score{lemmas}=0.01) = 0.000769230769230769
@@ -75,6 +39,6 @@ Validity: 0.01
 (weight=0.0769230769230769) * (score{tags}=0.752941176470588) = 0.0579185520361991
 (weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
 (weight=0.0769230769230769) * (score{udeprels}=0.540540540540541) = 0.0415800415800416
-(TOTAL score=0.465867856662549) * (availability=0.1) * (validity=0.01) = 0.000465867856662549
+(TOTAL score=0.465867856662549) * (availability=0.1) * (validity=1) = 0.0465867856662549
 STARS = 0
-UD_Arabic-NYUAD	0.000465867856662549	0
+UD_Arabic-NYUAD	0.0465867856662549	0
