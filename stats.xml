@@ -71,12 +71,12 @@
     <dep name="cc">49771</dep>
     <dep name="ccomp">17975</dep>
     <dep name="compound">725</dep>
-    <dep name="conj">31389</dep>
+    <dep name="conj">31377</dep>
     <dep name="cop">5325</dep>
     <dep name="csubj">1091</dep>
-    <dep name="dep">5594</dep>
+    <dep name="dep">5643</dep>
     <dep name="det">5284</dep>
-    <dep name="flat">901</dep>
+    <dep name="flat">864</dep>
     <dep name="flat:name">15524</dep>
     <dep name="iobj">463</dep>
     <dep name="mark">25711</dep>
