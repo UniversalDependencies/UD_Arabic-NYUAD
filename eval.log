@@ -3,9 +3,9 @@ commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Arabic-NYUAD:
-commit 097b381628e6edeecbb21d96032977940cf9bb7e
-Merge: 46d86d1 06b2c6e
+commit feb7c9188555b9f5aa380e0158588cf94ed155ce
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Fri May 10 20:54:32 2019 +0200
 Size: counted 738889 of 738889 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.2102954133792.
 Size: maximum value 13.815511 is for 1000000 words or more.
