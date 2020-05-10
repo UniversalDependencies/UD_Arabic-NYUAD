@@ -3,9 +3,9 @@ commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Arabic-NYUAD:
-commit feb7c9188555b9f5aa380e0158588cf94ed155ce
+commit a64cbc94767e7c737d08ad05529157f9ca803c1f
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 10 20:54:32 2019 +0200
+Date:   Tue Nov 12 16:41:09 2019 +0100
 Size: counted 738889 of 738889 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.2102954133792.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -25,12 +25,48 @@ Genres: found 1 out of 17 known.
 Availability: README does not say Includes text: yes
 Availability: '_' is the most frequent form.
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-dev.conllu
-*** PASSED ***
+[Line 1161 Sent 20000715_AFP_ARB.0002:11 Node 15]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 1277 Sent 20000715_AFP_ARB.0003:2 Node 34]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 1297 Sent 20000715_AFP_ARB.0003:3 Node 2]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 1315 Sent 20000715_AFP_ARB.0003:3 Node 19]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2182 Sent 20000715_AFP_ARB.0007:2 Node 13]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2342 Sent 20000715_AFP_ARB.0007:5 Node 13]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2540 Sent 20000715_AFP_ARB.0009:2 Node 16]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2654 Sent 20000715_AFP_ARB.0009:4 Node 35]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 3304 Sent 20000715_AFP_ARB.0011:2 Node 37]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+...suppressing further errors regarding Morpho
+Morpho errors: 223
+*** FAILED *** with 223 errors
+Exit code: 1
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-test.conllu
-*** PASSED ***
+[Line 785 Sent 20001115_AFP_ARB.0133:1 Node 41]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 1935 Sent 20001115_AFP_ARB.0136:1 Node 29]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2657 Sent 20001115_AFP_ARB.0139:1 Node 40]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2752 Sent 20001115_AFP_ARB.0139:3 Node 26]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2916 Sent 20001115_AFP_ARB.0139:6 Node 40]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2926 Sent 20001115_AFP_ARB.0139:6 Node 49]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 3065 Sent 20001115_AFP_ARB.0139:10 Node 20]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 3136 Sent 20001115_AFP_ARB.0139:12 Node 11]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 3207 Sent 20001115_AFP_ARB.0139:13 Node 21]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+...suppressing further errors regarding Morpho
+Morpho errors: 211
+*** FAILED *** with 211 errors
+Exit code: 1
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-train.conllu
-*** PASSED ***
-Validity: 1
+[Line 1662 Sent 20000715_AFP_ARB.0081:8 Node 18]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 1680 Sent 20000715_AFP_ARB.0081:8 Node 33]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 1717 Sent 20000715_AFP_ARB.0081:9 Node 12]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 1910 Sent 20000715_AFP_ARB.0081:13 Node 41]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2024 Sent 20000715_AFP_ARB.0081:16 Node 15]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2519 Sent 20000715_AFP_ARB.0083:2 Node 17]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2606 Sent 20000715_AFP_ARB.0083:4 Node 30]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2613 Sent 20000715_AFP_ARB.0083:4 Node 36]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+[Line 2624 Sent 20000715_AFP_ARB.0083:4 Node 46]: [L5 Morpho aux-lemma] 's' is not an auxiliary verb in language [ar]
+...suppressing further errors regarding Morpho
+Morpho errors: 1848
+*** FAILED *** with 1848 errors
+Exit code: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
 (weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
 (weight=0.0769230769230769) * (score{lemmas}=0.01) = 0.000769230769230769
@@ -39,6 +75,6 @@ Validity: 1
 (weight=0.0769230769230769) * (score{tags}=0.752941176470588) = 0.0579185520361991
 (weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
 (weight=0.0769230769230769) * (score{udeprels}=0.518918918918919) = 0.0399168399168399
-(TOTAL score=0.464204654999347) * (availability=0.1) * (validity=1) = 0.0464204654999347
+(TOTAL score=0.464204654999347) * (availability=0.1) * (validity=0.01) = 0.000464204654999347
 STARS = 0
-UD_Arabic-NYUAD	0.0464204654999347	0
+UD_Arabic-NYUAD	0.000464204654999347	0
