@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit ba6fbf413cb14afa25145b931c79fb60ef9456e2
-Author: www-data (nschneid) <nschneid@github.com>
-Date:   Wed May 11 05:10:30 2022 +0200
-Evaluating the following revision of UD_Arabic-NYUAD:
-commit 448cd1d1c0c5340301f1076977a70b0bc21a0451
+commit 13e6b709a8bc643c3f902800321a7beda46feb8d
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Wed Nov 3 15:53:40 2021 +0100
+Date:   Sun Nov 13 22:03:41 2022 +0100
+Evaluating the following revision of UD_Arabic-NYUAD:
+commit 27874394bc3b8163e7ba935ad66e606380892638
+Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Sat May 14 13:36:59 2022 +0200
 Size: counted 738889 of 738889 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.2102954133792.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -27,22 +27,37 @@ Genres: found 1 out of 17 known.
 Availability: README does not say Includes text: yes
 Availability: '_' is the most frequent form.
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-dev.conllu
+[Line 10353 Sent 20000715_AFP_ARB.0034:4 Node 5]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [4, 15]. Outer subjects are allowed if a clause acts as the predicate of another clause.
 [Line 33858 Sent ANN20020115.0022:13 Node 109]: [L5 Morpho aux-lemma] 'w' is not an auxiliary verb in language [ar]
+[Line 41995 Sent ANN20020115.0043:9 Node 2]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [3, 9]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 44076 Sent ANN20020115.0049:8 Node 54]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [6, 55]. Outer subjects are allowed if a clause acts as the predicate of another clause.
 [Line 75472 Sent UMAAH_UM.ARB_20020120-a.0002:5 Node 67]: [L5 Morpho aux-lemma] 'b' is not an auxiliary verb in language [ar]
 Morpho errors: 2
-*** FAILED *** with 2 errors
+Syntax errors: 3
+*** FAILED *** with 5 errors
 Exit code: 1
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-test.conllu
 *** PASSED ***
 validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-train.conllu
 [Line 13388 Sent 20000815_AFP_ARB.0031:3 Node 23]: [L5 Morpho aux-lemma] 'w' is not an auxiliary verb in language [ar]
 [Line 30093 Sent 20000815_AFP_ARB.0079:4 Node 55]: [L5 Morpho aux-lemma] 'w' is not an auxiliary verb in language [ar]
+[Line 103382 Sent 20001015_AFP_ARB.0130:3 Node 19]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [20, 26]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 115193 Sent 20001015_AFP_ARB.0186:7 Node 36]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [35, 44]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 115235 Sent 20001015_AFP_ARB.0186:8 Node 12]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [13, 43]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 147008 Sent 20001115_AFP_ARB.0080:17 Node 4]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [5, 20]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 168464 Sent ANN20020215.0019:4 Node 2]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [3, 6]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 173494 Sent ANN20020215.0031:9 Node 5]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [2, 21]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 227464 Sent ANN20020315.0050:8 Node 5]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [6, 33]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 250199 Sent ANN20020415.0005:13 Node 2]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [3, 10]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+[Line 267135 Sent ANN20020415.0067:7 Node 2]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [3, 16]. Outer subjects are allowed if a clause acts as the predicate of another clause.
+...suppressing further errors regarding Syntax
 [Line 381972 Sent ANN20020715.0007:2 Node 42]: [L5 Morpho aux-lemma] 'h' is not an auxiliary verb in language [ar]
 [Line 382422 Sent ANN20020715.0007:15 Node 48]: [L5 Morpho aux-lemma] 'h' is not an auxiliary verb in language [ar]
 [Line 635587 Sent UMAAH_UM.ARB_20020818-e.0008:6 Node 32]: [L5 Morpho aux-lemma] 'f' is not an auxiliary verb in language [ar]
 [Line 717831 Sent UMAAH_UM.ARB_backissue_33-a.0015:1 Node 55]: [L5 Morpho aux-lemma] 'hA' is not an auxiliary verb in language [ar]
 Morpho errors: 6
-*** FAILED *** with 6 errors
+Syntax errors: 22
+*** FAILED *** with 28 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
