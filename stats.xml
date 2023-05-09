@@ -16,16 +16,16 @@
   <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
   <tags unique="16">
     <tag name="ADJ">69355</tag><!-- _, TBupdate, 17, w, ,, 15, 12, 20, h, 11 -->
-    <tag name="ADP">91742</tag><!-- _, l, b, k, w, h, fy, ,, ", hA -->
+    <tag name="ADP">91743</tag><!-- _, l, b, k, w, h, fy, ,, ", hA -->
     <tag name="ADV">24067</tag><!-- _, lA, mA, ,, l, ", 6, f -->
-    <tag name="AUX">9163</tag><!-- _, s, w, h, b, f, hA -->
-    <tag name="CCONJ">49158</tag><!-- w, _, f, ,, hA, ", ., hm, (, ) -->
+    <tag name="AUX">9155</tag><!-- _, s -->
+    <tag name="CCONJ">49161</tag><!-- w, _, f, ,, hA, ", ., hm, (, ) -->
     <tag name="DET">6363</tag><!-- _, w, b, ,, ., l -->
     <tag name="INTJ">56</tag><!-- _ -->
     <tag name="NOUN">221899</tag><!-- _, TBupdate, w, l, b, h, ,, hA, ", f -->
     <tag name="NUM">15377</tag><!-- _, 6-3, 6-4, 1, 6, 4, 5, 7, ,, 11 -->
-    <tag name="PART">2519</tag><!-- _, f, l, >, w, ", ,, -, h, hA -->
-    <tag name="PRON">43493</tag><!-- _, h, hA, hm, nA, hmA, y, mA, k, km -->
+    <tag name="PART">2521</tag><!-- _, f, l, >, w, ", hA, ,, -, h -->
+    <tag name="PRON">43495</tag><!-- _, h, hA, hm, nA, hmA, y, mA, k, km -->
     <tag name="PROPN">57421</tag><!-- _, TBupdate, bry, bwls, Aljmyl, lArsn, EAlyh, fAdy, myqAty, Almr -->
     <tag name="PUNCT">75266</tag><!-- _, :, ., ,, ", (, ), /, TBupdate, - -->
     <tag name="SCONJ">16614</tag><!-- _, mA, w, l, f, ,, b, k, :, TBupdate -->
@@ -64,29 +64,30 @@
     <feat name="Voice" value="Pass" upos="ADP,NOUN,PROPN,SCONJ,VERB,X">3736</feat><!-- _ -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="25">
+  <deps unique="26">
     <dep name="acl">176</dep>
+    <dep name="advcl">2</dep>
     <dep name="advmod">18736</dep>
     <dep name="amod">62082</dep>
     <dep name="appos">107</dep>
-    <dep name="aux">3580</dep>
-    <dep name="case">91719</dep>
-    <dep name="cc">48768</dep>
+    <dep name="aux">3574</dep>
+    <dep name="case">91720</dep>
+    <dep name="cc">48771</dep>
     <dep name="ccomp">26983</dep>
     <dep name="compound">979</dep>
-    <dep name="conj">2</dep>
+    <dep name="conj">3</dep>
     <dep name="cop">5290</dep>
-    <dep name="dep">89</dep>
+    <dep name="dep">115</dep>
     <dep name="det">4202</dep>
     <dep name="discourse">55</dep>
     <dep name="flat">15884</dep>
     <dep name="iobj">22451</dep>
-    <dep name="mark">18784</dep>
-    <dep name="nmod">51348</dep>
+    <dep name="mark">18783</dep>
+    <dep name="nmod">51383</dep>
     <dep name="nmod:poss">96937</dep>
-    <dep name="nsubj">28901</dep>
+    <dep name="nsubj">28876</dep>
     <dep name="nummod">13611</dep>
-    <dep name="obj">118666</dep>
+    <dep name="obj">118630</dep>
     <dep name="punct">75226</dep>
     <dep name="root">19738</dep>
     <dep name="xcomp">14575</dep>
