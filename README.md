@@ -79,5 +79,5 @@ Features: converted from manual
 Relations: converted from manual
 Contributors: Habash, Nizar; Taji, Dima
 Contributing: elsewhere
-Contact: dima.taji@nyu.edu
+Contact: taji@ufal.mff.cuni.cz
 ===============================================================================
