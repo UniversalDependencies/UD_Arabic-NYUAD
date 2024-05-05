@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit e9726a6a7d6913193d90edb45a4cb549235c5b16
+commit 78ce4b21495c6e4c17a7b07925bec1267d833d14
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sat Nov 4 17:10:55 2023 +0100
+Date:   Sun May 5 09:21:16 2024 +0200
 Evaluating the following revision of UD_Arabic-NYUAD:
-commit ab70d53ad70041a96556ab5bc138537c655bff37
+commit e8e6d8f2e44ba2c393baa62444f2b162077e8d35
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 9 09:24:38 2023 +0200
+Date:   Mon Nov 6 11:28:35 2023 +0100
 Size: counted 738889 of 738889 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.2102954133792.
 Size: maximum value 13.815511 is for 1000000 words or more.
