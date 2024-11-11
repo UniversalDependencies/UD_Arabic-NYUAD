@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 78ce4b21495c6e4c17a7b07925bec1267d833d14
+commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 09:21:16 2024 +0200
+Date:   Sun Nov 10 10:33:45 2024 +0100
 Evaluating the following revision of UD_Arabic-NYUAD:
-commit e8e6d8f2e44ba2c393baa62444f2b162077e8d35
+commit cfb6f3cfabd06ea15d25c63886ab48d179537006
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Mon Nov 6 11:28:35 2023 +0100
+Date:   Sun May 5 11:51:23 2024 +0200
 Size: counted 738889 of 738889 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.2102954133792.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -29,8 +29,23 @@ Availability: '_' is the most frequent form.
 /net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-dev.conllu
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-test.conllu
+[Line 44720 Sent ANN20021115.0106:8 Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:_:det --> 1:_:nmod)
+[Line 77890 Sent UMAAH_UM.ARB_backissue_36-a.0010:1 Node 143]: [L3 Warning leaf-det] 'det' not expected to have children (143:_:det --> 144:_:xcomp)
+[Line 77892 Sent UMAAH_UM.ARB_backissue_36-a.0010:1 Node 143]: [L3 Warning leaf-det] 'det' not expected to have children (143:_:det --> 145:_:nsubj)
+Warnings: 3
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-train.conllu
+[Line 117662 Sent 20001015_AFP_ARB.0194:7 Node 9]: [L3 Warning leaf-det] 'det' not expected to have children (9:_:det --> 10:_:amod)
+[Line 117663 Sent 20001015_AFP_ARB.0194:7 Node 9]: [L3 Warning leaf-det] 'det' not expected to have children (9:_:det --> 11:_:amod)
+[Line 149855 Sent 20001115_AFP_ARB.0091:8 Node 29]: [L3 Warning leaf-det] 'det' not expected to have children (29:_:det --> 30:_:nmod)
+[Line 200979 Sent ANN20020215.0106:25 Node 1]: [L3 Warning leaf-det] 'det' not expected to have children (1:_:det --> 4:_:nmod)
+[Line 200982 Sent ANN20020215.0106:25 Node 1]: [L3 Warning leaf-det] 'det' not expected to have children (1:_:det --> 7:_:ccomp)
+[Line 323862 Sent ANN20020515.0102:14 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:_:det --> 1:_:mark)
+[Line 368395 Sent ANN20020615.0085:14 Node 18]: [L3 Warning leaf-det] 'det' not expected to have children (18:_:det --> 25:_:nmod)
+[Line 417206 Sent ANN20020715.0080:8 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:_:det --> 4:_:amod)
+[Line 417207 Sent ANN20020715.0080:8 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:_:det --> 5:_:nmod)
+[Line 710145 Sent UMAAH_UM.ARB_backissue_29-a.0010:2 Node 60]: [L3 Warning leaf-det] 'det' not expected to have children (60:_:det --> 59:_:nmod)
+Warnings: 10
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
