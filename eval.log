@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
+commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 10 10:33:45 2024 +0100
+Date:   Fri May 9 21:07:42 2025 +0200
 Evaluating the following revision of UD_Arabic-NYUAD:
-commit cfb6f3cfabd06ea15d25c63886ab48d179537006
+commit 070635739f0bb10519c1d52812aac27ac191195e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 11:51:23 2024 +0200
+Date:   Mon Nov 11 14:58:59 2024 +0100
 Size: counted 738889 of 738889 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.2102954133792.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -20,42 +20,44 @@ Features: source of annotation (from README) factor is 0.8.
 Universal relations: 25 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Udapi:
-               TOTAL     102869
-Udapi: found 102869 bugs.
+               TOTAL      94564
+Udapi: found 94564 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 738889 words.
-Genres: found 1 out of 17 known.
+Genres: found 1 out of 18 known.
 Availability: README does not say Includes text: yes
 Availability: '_' is the most frequent form.
 /net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-dev.conllu
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-test.conllu
-[Line 44720 Sent ANN20021115.0106:8 Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:_:det --> 1:_:nmod)
-[Line 77890 Sent UMAAH_UM.ARB_backissue_36-a.0010:1 Node 143]: [L3 Warning leaf-det] 'det' not expected to have children (143:_:det --> 144:_:xcomp)
-[Line 77892 Sent UMAAH_UM.ARB_backissue_36-a.0010:1 Node 143]: [L3 Warning leaf-det] 'det' not expected to have children (143:_:det --> 145:_:nsubj)
-Warnings: 3
-*** PASSED ***
+[Line 44720 Sent ANN20021115.0106:8 Node 3]: [L3 Syntax leaf-det] 'det' not expected to have children (3:_:det --> 1:_:nmod)
+[Line 77890 Sent UMAAH_UM.ARB_backissue_36-a.0010:1 Node 143]: [L3 Syntax leaf-det] 'det' not expected to have children (143:_:det --> 144:_:xcomp)
+[Line 77892 Sent UMAAH_UM.ARB_backissue_36-a.0010:1 Node 143]: [L3 Syntax leaf-det] 'det' not expected to have children (143:_:det --> 145:_:nsubj)
+Syntax errors: 3
+*** FAILED *** with 3 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-train.conllu
-[Line 117662 Sent 20001015_AFP_ARB.0194:7 Node 9]: [L3 Warning leaf-det] 'det' not expected to have children (9:_:det --> 10:_:amod)
-[Line 117663 Sent 20001015_AFP_ARB.0194:7 Node 9]: [L3 Warning leaf-det] 'det' not expected to have children (9:_:det --> 11:_:amod)
-[Line 149855 Sent 20001115_AFP_ARB.0091:8 Node 29]: [L3 Warning leaf-det] 'det' not expected to have children (29:_:det --> 30:_:nmod)
-[Line 200979 Sent ANN20020215.0106:25 Node 1]: [L3 Warning leaf-det] 'det' not expected to have children (1:_:det --> 4:_:nmod)
-[Line 200982 Sent ANN20020215.0106:25 Node 1]: [L3 Warning leaf-det] 'det' not expected to have children (1:_:det --> 7:_:ccomp)
-[Line 323862 Sent ANN20020515.0102:14 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:_:det --> 1:_:mark)
-[Line 368395 Sent ANN20020615.0085:14 Node 18]: [L3 Warning leaf-det] 'det' not expected to have children (18:_:det --> 25:_:nmod)
-[Line 417206 Sent ANN20020715.0080:8 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:_:det --> 4:_:amod)
-[Line 417207 Sent ANN20020715.0080:8 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:_:det --> 5:_:nmod)
-[Line 710145 Sent UMAAH_UM.ARB_backissue_29-a.0010:2 Node 60]: [L3 Warning leaf-det] 'det' not expected to have children (60:_:det --> 59:_:nmod)
-Warnings: 10
-*** PASSED ***
-Validity: 1
+[Line 117662 Sent 20001015_AFP_ARB.0194:7 Node 9]: [L3 Syntax leaf-det] 'det' not expected to have children (9:_:det --> 10:_:amod)
+[Line 117663 Sent 20001015_AFP_ARB.0194:7 Node 9]: [L3 Syntax leaf-det] 'det' not expected to have children (9:_:det --> 11:_:amod)
+[Line 149855 Sent 20001115_AFP_ARB.0091:8 Node 29]: [L3 Syntax leaf-det] 'det' not expected to have children (29:_:det --> 30:_:nmod)
+[Line 200979 Sent ANN20020215.0106:25 Node 1]: [L3 Syntax leaf-det] 'det' not expected to have children (1:_:det --> 4:_:nmod)
+[Line 200982 Sent ANN20020215.0106:25 Node 1]: [L3 Syntax leaf-det] 'det' not expected to have children (1:_:det --> 7:_:ccomp)
+[Line 323862 Sent ANN20020515.0102:14 Node 2]: [L3 Syntax leaf-det] 'det' not expected to have children (2:_:det --> 1:_:mark)
+[Line 368395 Sent ANN20020615.0085:14 Node 18]: [L3 Syntax leaf-det] 'det' not expected to have children (18:_:det --> 25:_:nmod)
+[Line 417206 Sent ANN20020715.0080:8 Node 2]: [L3 Syntax leaf-det] 'det' not expected to have children (2:_:det --> 4:_:amod)
+[Line 417207 Sent ANN20020715.0080:8 Node 2]: [L3 Syntax leaf-det] 'det' not expected to have children (2:_:det --> 5:_:nmod)
+[Line 710145 Sent UMAAH_UM.ARB_backissue_29-a.0010:2 Node 60]: [L3 Syntax leaf-det] 'det' not expected to have children (60:_:det --> 59:_:nmod)
+Syntax errors: 10
+*** FAILED *** with 10 errors
+Exit code: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
-(weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
+(weight=0.0769230769230769) * (score{genres}=0.0555555555555556) = 0.00427350427350427
 (weight=0.0769230769230769) * (score{lemmas}=0.01) = 0.000769230769230769
 (weight=0.256410256410256) * (score{size}=0.956193067057072) = 0.245177709501813
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.752941176470588) = 0.0579185520361991
 (weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
 (weight=0.0769230769230769) * (score{udeprels}=0.540540540540541) = 0.0415800415800416
-(TOTAL score=0.465867856662549) * (availability=0.1) * (validity=1) = 0.0465867856662549
+(TOTAL score=0.465616474058225) * (availability=0.1) * (validity=0.01) = 0.000465616474058225
 STARS = 0
-UD_Arabic-NYUAD	0.0465867856662549	0
+UD_Arabic-NYUAD	0.000465616474058225	0
