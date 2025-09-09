@@ -71,6 +71,7 @@ Category=value feature pairs: 27
 Data available since: UD v2.0
 License: CC BY-SA 4.0
 Includes text: no
+Parallel: no
 Genre: news
 Lemmas: converted from manual
 UPOS: converted from manual
