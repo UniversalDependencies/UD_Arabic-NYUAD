@@ -1,7 +1,120 @@
-Usage:   perl -I ./tools ./tools/evaluate_treebank.pl <ud-treebank-name>
-Example: perl -I ./tools ./tools/evaluate_treebank.pl UD_Czech-PDTC
-Before running, make sure the current folder is one level above the clones of UD GitHub repositories.
-Specifically, the subfolders should include the evaluated treebank(s), as well as the tools folder,
-from which this script is invoked and which also holds the validator.
-$0 == tools/evaluate_treebank.pl
-The script must be invoked using relative path (starting with a dot) from the superordinate folder at tools/evaluate_treebank.pl line 40.
+Running the following version of UD tools:
+commit 26e6c87a2f518322d15901a351199b6be6569062
+Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Fri Nov 7 15:39:58 2025 +0100
+Evaluating the following revision of UD_Arabic-NYUAD:
+commit 379b716a368fe9dd86fff285826b5339a2e98ae5
+Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Tue Nov 11 18:38:52 2025 +0100
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'ar_nyuad'
+Language code (from CoNLL-U file name) = 'ar'
+Found the following data files: ar_nyuad-ud-dev.conllu, ar_nyuad-ud-test.conllu, ar_nyuad-ud-train.conllu
+Size: counted 738889 of 738889 words (nodes).
+Size: min(0, log((N/1000)**2)) = 13.2102954133792.
+Size: maximum value 13.815511 is for 1000000 words or more.
+Split: Found more than 10000 training words.
+Split: Found at least 10000 development words.
+Split: Found at least 10000 test words.
+Lemmas: '_' is the most frequent lemma.
+Universal POS tags: 16 out of 17 found in the corpus.
+Universal POS tags: source of annotation (from README) factor is 0.8.
+Features: 584586 out of 738889 total words have one or more features.
+Features: source of annotation (from README) factor is 0.8.
+Universal relations: 25 out of 37 found in the corpus.
+Universal relations: source of annotation (from README) factor is 0.8.
+Genres: found 1 out of 18 known.
+Availability: README does not say Includes text: yes
+Availability: '_' is the most frequent form.
+/net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-dev.conllu
+[Line 104 Sent 20000715_AFP_ARB.0001:2]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 153 Sent 20000715_AFP_ARB.0001:3]: [L3 Syntax too-many-objects] Multiple direct objects [38, 41] ('_', '_') under the predicate '_'.
+[Line 221 Sent 20000715_AFP_ARB.0001:4]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 247 Sent 20000715_AFP_ARB.0001:5]: [L3 Syntax too-many-objects] Multiple direct objects [10, 12] ('_', '_') under the predicate '_'.
+[Line 254 Sent 20000715_AFP_ARB.0001:5]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 308 Sent 20000715_AFP_ARB.0001:6]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 352 Sent 20000715_AFP_ARB.0001:6]: [L3 Syntax too-many-objects] Multiple direct objects [55, 57] ('_', '_') under the predicate '_'.
+[Line 381 Sent 20000715_AFP_ARB.0001:7]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 391 Sent 20000715_AFP_ARB.0001:7]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 435 Sent 20000715_AFP_ARB.0001:7]: [L3 Syntax too-many-objects] Multiple direct objects [62, 65] ('_', '_') under the predicate '_'.
+[Line 487 Sent 20000715_AFP_ARB.0001:9]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 663 Sent 20000715_AFP_ARB.0001:11]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 683 Sent 20000715_AFP_ARB.0002:1]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 721 Sent 20000715_AFP_ARB.0002:1]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further errors regarding Warning
+[Line 973 Sent 20000715_AFP_ARB.0002:6]: [L3 Syntax too-many-objects] Multiple direct objects [24, 32] ('_', '_') under the predicate '_'.
+[Line 1692 Sent 20000715_AFP_ARB.0005:3]: [L3 Syntax too-many-objects] Multiple direct objects [21, 32] ('_', '_') under the predicate '_'.
+[Line 2151 Sent 20000715_AFP_ARB.0007:1]: [L3 Syntax too-many-objects] Multiple direct objects [31, 34] ('_', '_') under the predicate '_'.
+[Line 2176 Sent 20000715_AFP_ARB.0007:2]: [L3 Syntax too-many-objects] Multiple direct objects [10, 35] ('_', '_') under the predicate '_'.
+[Line 2421 Sent 20000715_AFP_ARB.0008:2]: [L3 Syntax too-many-objects] Multiple direct objects [3, 24] ('_', '_') under the predicate '_'.
+[Line 2446 Sent 20000715_AFP_ARB.0008:2]: [L3 Syntax too-many-objects] Multiple direct objects [28, 39] ('_', '_') under the predicate '_'.
+...suppressing further errors regarding Syntax
+Syntax errors: 446
+Warnings: 1902
+*** FAILED *** with 446 errors
+Exit code: 1
+/net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-test.conllu
+[Line 72 Sent 20001115_AFP_ARB.0130:1]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 123 Sent 20001115_AFP_ARB.0130:2]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 150 Sent 20001115_AFP_ARB.0130:3]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 157 Sent 20001115_AFP_ARB.0130:3]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 212 Sent 20001115_AFP_ARB.0131:1]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 236 Sent 20001115_AFP_ARB.0131:1]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 266 Sent 20001115_AFP_ARB.0131:2]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 339 Sent 20001115_AFP_ARB.0131:4]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 353 Sent 20001115_AFP_ARB.0131:4]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 356 Sent 20001115_AFP_ARB.0131:4]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further errors regarding Warning
+[Line 505 Sent 20001115_AFP_ARB.0131:8]: [L3 Syntax too-many-objects] Multiple direct objects [20, 25] ('_', '_') under the predicate '_'.
+[Line 1176 Sent 20001115_AFP_ARB.0133:11]: [L3 Syntax too-many-objects] Multiple direct objects [11, 15] ('_', '_') under the predicate '_'.
+[Line 1287 Sent 20001115_AFP_ARB.0133:14]: [L3 Syntax too-many-objects] Multiple direct objects [8, 23] ('_', '_') under the predicate '_'.
+[Line 1438 Sent 20001115_AFP_ARB.0134:4]: [L3 Syntax too-many-objects] Multiple direct objects [9, 15] ('_', '_') under the predicate '_'.
+[Line 1466 Sent 20001115_AFP_ARB.0134:4]: [L3 Syntax too-many-objects] Multiple direct objects [28, 31] ('_', '_') under the predicate '_'.
+[Line 2184 Sent 20001115_AFP_ARB.0137:6]: [L3 Syntax too-many-objects] Multiple direct objects [21, 24] ('_', '_') under the predicate '_'.
+[Line 2240 Sent 20001115_AFP_ARB.0137:7]: [L3 Syntax too-many-objects] Multiple direct objects [32, 37] ('_', '_') under the predicate '_'.
+[Line 2727 Sent 20001115_AFP_ARB.0139:3]: [L3 Syntax too-many-objects] Multiple direct objects [7, 16] ('_', '_') under the predicate '_'.
+[Line 2790 Sent 20001115_AFP_ARB.0139:4]: [L3 Syntax too-many-objects] Multiple direct objects [26, 28] ('_', '_') under the predicate '_'.
+[Line 2891 Sent 20001115_AFP_ARB.0139:6]: [L3 Syntax too-many-objects] Multiple direct objects [21, 23] ('_', '_') under the predicate '_'.
+...suppressing further errors regarding Syntax
+Syntax errors: 429
+Warnings: 1886
+*** FAILED *** with 429 errors
+Exit code: 1
+/net/work/people/zeman/unidep/tools/validate.py --lang ar --max-err=10 UD_Arabic-NYUAD/ar_nyuad-ud-train.conllu
+[Line 41 Sent 20000715_AFP_ARB.0074:1]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 138 Sent 20000715_AFP_ARB.0074:4]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 191 Sent 20000715_AFP_ARB.0074:4]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 221 Sent 20000715_AFP_ARB.0074:5]: [L3 Syntax too-many-objects] Multiple direct objects [8, 26] ('_', '_') under the predicate '_'.
+[Line 228 Sent 20000715_AFP_ARB.0074:5]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 242 Sent 20000715_AFP_ARB.0074:5]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 272 Sent 20000715_AFP_ARB.0074:6]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 274 Sent 20000715_AFP_ARB.0074:6]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 378 Sent 20000715_AFP_ARB.0075:2]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 389 Sent 20000715_AFP_ARB.0075:2]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 493 Sent 20000715_AFP_ARB.0075:5]: [L3 Warning pron-det-without-prontype] The word '_' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 537 Sent 20000715_AFP_ARB.0075:6]: [L3 Syntax too-many-objects] Multiple direct objects [38, 40] ('_', '_') under the predicate '_'.
+...suppressing further errors regarding Warning
+[Line 637 Sent 20000715_AFP_ARB.0076:2]: [L3 Syntax too-many-objects] Multiple direct objects [19, 25] ('_', '_') under the predicate '_'.
+[Line 942 Sent 20000715_AFP_ARB.0079:10]: [L3 Syntax too-many-objects] Multiple direct objects [11, 14] ('_', '_') under the predicate '_'.
+[Line 1181 Sent 20000715_AFP_ARB.0080:8]: [L3 Syntax too-many-objects] Multiple direct objects [15, 17] ('_', '_') under the predicate '_'.
+[Line 1488 Sent 20000715_AFP_ARB.0081:3]: [L3 Syntax too-many-objects] Multiple direct objects [27, 33] ('_', '_') under the predicate '_'.
+[Line 1576 Sent 20000715_AFP_ARB.0081:6]: [L3 Syntax too-many-objects] Multiple direct objects [10, 28] ('_', '_') under the predicate '_'.
+[Line 2409 Sent 20000715_AFP_ARB.0082:7]: [L3 Syntax too-many-objects] Multiple direct objects [6, 10] ('_', '_') under the predicate '_'.
+[Line 2804 Sent 20000715_AFP_ARB.0084:3]: [L3 Syntax too-many-objects] Multiple direct objects [37, 39] ('_', '_') under the predicate '_'.
+[Line 3157 Sent 20000715_AFP_ARB.0086:2]: [L3 Syntax too-many-objects] Multiple direct objects [22, 24] ('_', '_') under the predicate '_'.
+...suppressing further errors regarding Syntax
+Syntax errors: 3749
+Warnings: 15319
+*** FAILED *** with 3749 errors
+Exit code: 1
+Validity: 0.01
+(weight=0.111111111111111) * (score{features}=0.8) = 0.0888888888888889
+(weight=0.111111111111111) * (score{genres}=0.0555555555555556) = 0.00617283950617284
+(weight=0.111111111111111) * (score{lemmas}=0.01) = 0.00111111111111111
+(weight=0.37037037037037) * (score{size}=0.956193067057072) = 0.354145580391508
+(weight=0.0740740740740741) * (score{split}=1) = 0.0740740740740741
+(weight=0.111111111111111) * (score{tags}=0.752941176470588) = 0.0836601307189542
+(weight=0.111111111111111) * (score{udeprels}=0.540540540540541) = 0.0600600600600601
+(TOTAL score=0.668112684750769) * (availability=0.1) * (validity=0.01) = 0.000668112684750769
+STARS = 0
+UD_Arabic-NYUAD	0.000668112684750769	0
